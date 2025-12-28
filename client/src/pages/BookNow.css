@@ -1,0 +1,99 @@
+.bus-seats-container {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px; /* Reduce padding */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px; 
+    max-width: 255px; /* Reduce container width */
+    margin: 20px auto;
+    background-color: #f8f9fa;
+}
+
+/* Smaller Seat Styling */
+.seat {
+    width: 50px;  /* Reduced size */
+    height: 35px;  /* Reduced size */
+    background-color: #eee;
+    border: 2px solid #a0a0a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.7em; /* Adjust font size */
+    transition: background-color 0.2s ease;
+}
+.seat:hover {
+    transform: scale(1.05);
+}
+
+.seat.booked {
+    background-color: #f00;
+    color: white;
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    background-color: #0f0;
+    color: white;
+}
+
+/* Add a "gap" after the second seat to simulate an aisle.  Adjust as needed. */
+.seat:nth-child(2n) {
+    margin-right: 15px; 
+}
+
+/* Seat Status Legend */
+.seat-status {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.seat-status div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.seat-status .available {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 2px solid #a0a0a0;
+    border-radius: 3px;
+}
+
+.seat-status .booked {
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    border: 2px solid #a0a0a0;
+    border-radius: 3px;
+}
+
+.seat-status .selected {
+    width: 20px;
+    height: 20px;
+    background-color: #0f0;
+    border: 2px solid #a0a0a0;
+    border-radius: 3px;
+}
+.payment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
