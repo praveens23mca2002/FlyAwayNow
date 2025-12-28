@@ -1,0 +1,38 @@
+[
+  {
+      "id": "0",
+      "city": "Erode",
+      "region": "5"
+  },
+  {
+      "id": "1",
+      "city": "Coimbatore",
+      "region": "9"
+  },
+  {
+      "id": "2",
+      "city": "salem",
+      "region": "8"
+  },
+  {
+      "id": "3",
+      "city": "Trichy",
+      "region": "5"
+  },
+  {
+      "id": "4",
+      "city": "Madurai",
+      "region": "9"
+  },
+  {
+      "id": "5",
+      "city": "Theni",
+      "region": "3"
+  },
+  {
+      "id": "6",
+      "city": "Karraikkal",
+      "region": "2"
+  }
+  
+]
